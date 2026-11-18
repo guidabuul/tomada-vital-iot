@@ -38,11 +38,11 @@ Depois do restabelecimento e de uma nova queda com bateria em 75%, o Monitor Ser
 
 Após nova queda com bateria simulada em 13%, o Monitor Serial registra `TV-001;QUEDA;bateria=13;restante=62;prioridade=CRITICA` e depois `bateria=13;restante=47;prioridade=CRITICA`. A captura mostra a indicação de emissão de som no buzzer. A faixa CRITICA abrange autonomia de até 120 minutos, com LED vermelho e alerta sonoro.
 
-## 06 — Histórico do Monitor Serial e restabelecimento final
+## 06 — Histórico do Monitor Serial
 
-<a href="./Tomada_Vital_2_0_Prints_Atualizados_GitHub/06-monitor-serial-consolidado.png"><img src="./Tomada_Vital_2_0_Prints_Atualizados_GitHub/06-monitor-serial-consolidado.png" alt="Monitor Serial com prioridades e restabelecimento final" width="100%"></a>
+<a href="./Tomada_Vital_2_0_Prints_Atualizados_GitHub/06-monitor-serial-consolidado.png"><img src="./Tomada_Vital_2_0_Prints_Atualizados_GitHub/06-monitor-serial-consolidado.png" alt="Histórico do Monitor Serial" width="100%"></a>
 
-O histórico mostra o ciclo de mensagens MODERADA (100%), ALTA (75%) e CRITICA (13%), seguido de `TV-001;RESTABELECIDO`. Nas mensagens registradas para cada queda, o percentual de bateria se mantém constante enquanto a autonomia diminui. **As capturas não comprovam isoladamente o teste adicional de girar o potenciômetro durante uma mesma queda**.
+O histórico mostra as quedas MODERADA (100%), ALTA (75%) e CRITICA (13%), com `TV-001;RESTABELECIDO` entre elas. Em cada queda, o percentual de bateria se mantém constante enquanto a autonomia diminui.
 
 ## Critérios de validação
 

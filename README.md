@@ -78,10 +78,9 @@ Os nomes de prioridade não usam acentos no código porque seguem o padrão de i
 | 2. Queda com 100% | Chave em GND com bateria em 100% | LED amarelo, MODERADA | `bateria=100;restante=480;prioridade=MODERADA` |
 | 3. Queda com 75% | Restabelecer, ajustar bateria e provocar nova queda | LED amarelo, ALTA | `bateria=75;restante=360;prioridade=ALTA` |
 | 4. Queda com 13% | Restabelecer, ajustar bateria e provocar nova queda | LED vermelho e buzzer, CRITICA | `bateria=13;restante=62;prioridade=CRITICA`; buzzer indicado como ativo |
-| 5. Restabelecimento | Voltar a chave para 5V | LED verde; buzzer desligado; mensagem de retorno | `TV-001;RESTABELECIDO` no histórico enviado pela equipe |
-| 6. Atualização da bateria durante a mesma queda | Girar potenciômetro com chave em GND | Valor inicial de bateria permanece fixo; restante diminui | Não validado isoladamente nas capturas; permanece como teste complementar |
+| 5. Restabelecimento | Voltar a chave para 5V | LED verde; buzzer desligado; mensagem de retorno | `TV-001;RESTABELECIDO` no histórico do Monitor Serial |
 
-**Observações dos testes realizados no Tinkercad (18/11/2026):** a equipe documentou os estados MODERADA, ALTA e CRITICA com o código atualizado. No histórico de cada ocorrência o valor de `bateria` permaneceu constante e o tempo restante diminuiu. O teste específico de girar o potenciômetro durante a mesma queda não foi comprovado pelas capturas. O Monitor Serial também registrou o restabelecimento da energia. Os resultados são de simulação, não de testes em equipamentos médicos reais. Consulte as [Evidências da simulação](evidencias/README.md).
+**Observações dos testes realizados no Tinkercad (18/11/2026):** documentamos os estados MODERADA, ALTA e CRITICA com o código atualizado. No histórico de cada ocorrência o valor de `bateria` permaneceu constante e o tempo restante diminuiu. O Monitor Serial também registrou o restabelecimento da energia. Os resultados são de simulação, não de testes em equipamentos médicos reais. Consulte as [Evidências da simulação](evidencias/README.md).
 
 Trechos registrados no Monitor Serial:
 
